@@ -1337,6 +1337,17 @@ class Argentum(AuxPowMixin, Coin):
     TX_PER_BLOCK = 2000
     RPC_PORT = 13581
 
+class Wayfcoin(Dash):
+    SHORTNAME = "WAYF"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488B21E")
+    XPRV_VERBYTES = bytes.fromhex("0488ADE4")
+    GENESIS_HASH = ('00000ca0786f3090f171c2a1ac73635a33295e829133c168acd38ac689ab3978')
+    P2PKH_VERBYTE = bytes.fromhex("8c")
+    TX_COUNT_HEIGHT = 101619
+    TX_COUNT = 132681
+    TX_PER_BLOCK = 1
+    RPC_PORT = 10257
 
 class ArgentumTestnet(Argentum):
     SHORTNAME = "XRG"
