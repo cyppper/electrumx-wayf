@@ -1338,6 +1338,7 @@ class Argentum(AuxPowMixin, Coin):
     RPC_PORT = 13581
 
 class Wayfcoin(Dash):
+    NAME = "Wayfcoin"
     SHORTNAME = "WAYF"
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488B21E")
